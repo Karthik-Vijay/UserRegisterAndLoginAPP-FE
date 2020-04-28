@@ -1,0 +1,20 @@
+#homeDiv
+{
+    height:40rem;
+    width:auto;
+    background-image: url('\login-background.jpg');
+    background-size:cover;
+    
+    .login
+    {
+     display:inline-block; 
+     padding-right:2rem;
+     margin-left:35rem;
+     margin-top:15rem;
+    }
+    .register
+    {
+        display: inline-block;
+        margin-top:15rem;
+    }
+}

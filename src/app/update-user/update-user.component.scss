@@ -1,0 +1,24 @@
+.userReg
+{
+    padding-right:25rem;
+    padding-top:5rem;
+    padding-left:25rem;
+    height:40rem;
+    width:auto;
+    background-image: url('\login-background.jpg');
+    background-size:cover;
+    .Update
+    {
+        margin-left:15rem;
+    }
+     mat-form-field
+     {
+         display:block;
+     }
+  
+     .welcomeMsg
+     {
+         color:blue;
+         text-align:center;
+     }
+}

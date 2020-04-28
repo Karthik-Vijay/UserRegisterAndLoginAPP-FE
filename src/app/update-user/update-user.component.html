@@ -1,0 +1,33 @@
+<div class="userReg" [formGroup]="updateDetailsform">
+        <h2 class="welcomeMsg"></h2> 
+        <mat-form-field>
+                <input matInput placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{6,20}$"
+                        formControlName="username">
+                <i class="material-icons"></i>
+        </mat-form-field>
+
+        <mat-form-field>
+                <input matInput placeholder="Password"
+                        pattern="(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" type="password"
+                        [type]="hide? 'password':'text'" formControlName="password" (keypress)="restrictPassword($event)">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+        </mat-form-field>
+
+        <mat-form-field>
+                <input matInput placeholder="Email" type="email" value=" " formControlName="email"><i class="material-icons"></i>
+        </mat-form-field>
+
+        <mat-form-field>
+                <input matInput placeholder="Address" formControlName="address"><i class="material-icons"></i>
+        </mat-form-field>
+
+        <mat-form-field>
+                <input matInput placeholder="Phone Number" pattern="[6789][0-9]{9}" type="text" maxlength="10"
+                        formControlName="phoneNumber" (keypress)="restrictNumeric($event)">
+        </mat-form-field>
+
+        <div class="Update"><button mat-button (click)="updateDetails()">Update</button></div>
+</div>

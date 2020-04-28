@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-button
+{
+    background-color:indianred;
+    color:white;
+    display:inline-block;
+    font-size:24px;
+}
+.mat-form-field
+{
+    color:lightblue;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label
+{
+    color:red($color: #000000);
+}
+.mat-input-element
+{
+ color:aquamarine;
+}
+.mat-icon
+{
+    color:black;
+}
+.material-icons 
+{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
